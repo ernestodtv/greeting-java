@@ -1,11 +1,17 @@
 language: java
 jdk:
-  - oraclejdk7
-  - oraclejdk8
-
+- oraclejdk7
+- oraclejdk8
 notifications:
   email:
     recipients:
-        - alegalseg@alum.us.es
+    - alegalseg@alum.us.es
     on_success: never
     on_failure: never
+deploy:
+  provider: heroku
+  api_key:
+    secure: eQQPuw2BV5L52Uo5Ww/m86XN5D5djSIF4ylxGy2JMcLhqF2MoBlSCG9zvOpZldLaH9i04/gmjv3nud48B6xEh3uSZW3YPg2GxiS+Fncjcmk37zxZ4RFMc0rBI5bwwpcOty1ndicteaXSD3lJn12qhJlZ5iKhnDqJmfsGlhM2VfyPSwTE8XFvcxT6Jc27AQhz+b/EF36D+4PRdoDIjO4JfExsY9YemPWo2POpoDXSh1xXEMklOLVFBK+m49w4aUI9SDnMooQjbh7ezly23uWxbQgiswN4m1plHi270SgR43F7TxT3TC5yIliarCqnAoyzJCnVuBZV0fU9Bdt9wP3yjkSpJ89TbRO03PW5KoDd8wM9UkS5bHDd1GzV7Tim0mwX6EsHAh5NZhhCUMsrFQbrJUIYWahTuZgW0jPhIf10Hqwu9gNhzc4SttG51We3yEt5QbmQQpsoG0Nudpa13BEVckN7LyVhP/4eHDWeAShX186unmG6Y21W2BQCgTa1AABtvnQ4zAyqiZN7lfVi89owmJ/X6zynR1+KBnwmWxo0v/DGRX1O73onNQ/zxf6yB1mjF73qGLlaiopVgz9kh7hdNJ95pcQqZGt+Cw39mA9+MiDBXoJKYg/Mo2yyhwdeGqRrvEljPdZJQWiY7s0KC1cJmuwSmAle0+IHLobIvZHTIME=
+  app: greeting-java
+  on:
+    repo: ernestodtv/greeting-java
