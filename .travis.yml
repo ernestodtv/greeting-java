@@ -1,0 +1,11 @@
+language: java
+jdk:
+  - oraclejdk7
+  - oraclejdk8
+
+notifications:
+  email:
+    recipients:
+        - alegalseg@alum.us.es
+    on_success: never
+    on_failure: never
